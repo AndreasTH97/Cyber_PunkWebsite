@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <title>My test page</title>
+        <meta charset="utf-8">
+        <meta name = "viewport" content="width=device-width, initial-scale = 1">
+        
+        <style>
+            body, html
+            {
+                height: 100%;
+                margin: 0;
+                
+            }
+            </style>
+
+
+</head>
+
+<body>
+    
+    <!-- Headline  -->
+    <div class="contaier">
+        <link href="https://fonts.googleapis.com/css?family=Big+Shoulders+Text&display=swap" rel="stylesheet">
+        <h1> CYBERPUNK 2077</h1>
+    </div>
+    <!-- Headline -->
+            
+</body>
+
+
+<body>
+ <!-- Countdown script and code for implementing countdown times -->
+    <h2>        
+        <div class=" count">
+        <div class="countd">
+
+            <span id = "days">00</span>
+            DAYS
+        </div>
+
+        <div class="countd">
+
+            <span id = "hours">00</span>
+            HOURS
+        </div>
+        
+        <div class="countd">
+
+            <span id = "minutes">00</span>
+            MINUTES
+        </div>
+
+        <div class="countd">
+
+            <span id = "seconds">00</span>
+            SECONDS
+        </div>
+    </div>
+
+</h2>
+   
+  <script type="text/javascript">
+  var count = new Date("september 17,2020 00:00:00").getTime();
+  var x = setInterval(function()
+  {
+      var now = new Date().getTime();
+      var d = count - now;
+
+      var days = Math.floor(d/(1000*60*60*24));
+      var hours  = Math.floor((d%(1000*60*60*24))/(1000*60*60));
+      var minutes = Math.floor((d%(1000*60*60))/(1000*60));
+      var seconds = Math.floor((d%(1000*60))/1000);
+
+      document.getElementById("days").innerHTML = days;
+      document.getElementById("hours").innerHTML = hours;
+      document.getElementById("minutes").innerHTML = minutes;
+      document.getElementById("seconds").innerHTML = seconds;
+
+      if(d <= 0)
+      {
+        clearInterval(x);
+      }
+
+  }, 1000);
+
+  </script> 
+  <!-- Countdown script and code for implementing countdown times -->
+</body>
+
+
+    <body>
+         <!-- YouTube video  -->
+         <h3>
+
+         <iframe width="420" height="315" src="https://www.youtube.com/embed/FknHjl7eQ6o" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+         </h3>
+
+         <!-- Youtube link -->
+
+         <!-- Link to gamepage -->
+        
+        <li>
+            <link href="styles/style.css"rel="stylesheet">            
+        </li>
+        <!-- Link to gamepage -->
+        <a href="https://www.cyberpunk.net/no/en/" class="cyberButton"> WEBSITE </a>
+
+    </body>
+
+    <body>
+        <!-- Twitter -->
+        <h5>
+                    <a class="twitter-timeline" data-lang="en" data-width="220" data-height="420" data-theme="dark" href="https://twitter.com/CyberpunkGame?ref_src=twsrc%5Etfw">Tweets by CyberpunkGame</a> 
+                  <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </h5>
+        <!-- Twitter -->
+    </body>
+</html>
